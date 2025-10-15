@@ -5,6 +5,7 @@ import HeroSplit from '@/components/sections/hero/HeroSplit';
 import SplitAbout from '@/components/sections/about/SplitAbout';
 import ContactSplit from '@/components/sections/contact/ContactSplit';
 import FooterBase from '@/components/sections/footer/FooterBase';
+import { Coffee } from 'lucide-react';
 
 const assetMap: { id: string; url: string; alt?: string }[] = [
   { "id": "hero", "url": "https://images.pexels.com/photos/6612575/pexels-photo-6612575.jpeg?auto=compress&cs=tinysrgb&h=650&w=940", "alt": "A close-up view of a professional espresso machine with syrup bottles in a coffee shop setting." },
@@ -41,7 +42,7 @@ export default function Home() {
         <div className="mx-auto px-4 md:px-6 text-gray-800">
           <SplitAbout
             bulletPoints={[
-              { title: "Our Coffee", description: "Crafted from premium beans", icon: "Coffee" },
+              { title: "Our Coffee", description: "Crafted from premium beans", icon: Coffee },
               { title: "Our Mission", description: "Deliver happiness one cup at a time" }
             ]}
             imageSrc={assetMap.find(a => a.id === "about")?.url}
